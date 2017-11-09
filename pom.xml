@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.imolczek.school.banking</groupId>
+    <artifactId>loan-calculation-ds</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>loan-calculation-ds</name>
+    <description>A declarative service wrapper for the loan calculation service</description>
+
+	<properties>
+		<cxf.version>3.2.0</cxf.version>
+		<osgi.version>6.0.0</osgi.version>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+		    <groupId>com.imolczek.school.banking</groupId>
+		    <artifactId>banking-loan-calculator</artifactId>
+		    <version>0.0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>com.imolczek.school.banking</groupId>
+		    <artifactId>banking-loan-model</artifactId>
+		    <version>0.0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.osgi</groupId>
+		    <artifactId>org.osgi.core</artifactId>
+		    <version>${osgi.version}</version>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.osgi</groupId>
+		    <artifactId>org.osgi.service.component.annotations</artifactId>
+		    <version>1.3.0</version>
+		    <scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>loan-calculation-ds.api</module>
+		<module>loan-calculation-ds.impl</module>
+	</modules>
+	
+</project>

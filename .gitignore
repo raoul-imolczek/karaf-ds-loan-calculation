@@ -1,0 +1,13 @@
+/loan-calculation-ds.api/target/
+/loan-calculation-ds.api/.settings
+/loan-calculation-ds.api/.project
+/loan-calculation-ds.api/.classpath
+
+/loan-calculation-ds.impl/target/
+/loan-calculation-ds.impl/.settings
+/loan-calculation-ds.impl/.project
+/loan-calculation-ds.impl/.classpath
+
+.project
+.settings
+.classpath
