@@ -37,10 +37,11 @@
                 <configuration>
                     <obrRepository>NONE</obrRepository>
                     <instructions>
-                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>${project.artifactId}-api</Bundle-SymbolicName>
                         <Build-Revision>${buildNumber}</Build-Revision>
                         <Build-Date>${timestamp}</Build-Date>
                         <_include>-bnd.bnd</_include>
+			            <Service-Component>*</Service-Component>
                     </instructions>
                 </configuration>
             </plugin>    	
