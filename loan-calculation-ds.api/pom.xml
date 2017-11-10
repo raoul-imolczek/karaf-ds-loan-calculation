@@ -12,7 +12,7 @@
 	<artifactId>loan-calculation-ds.api</artifactId>
     <packaging>bundle</packaging>
 
-    <name>loan-calculation-ds</name>
+    <name>loan-calculation-ds-api</name>
     <description>A declarative service wrapper for the loan calculation service api</description>
 
 	<dependencies>
@@ -37,11 +37,12 @@
                 <configuration>
                     <obrRepository>NONE</obrRepository>
                     <instructions>
-                        <Bundle-SymbolicName>${project.artifactId}-api</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Build-Revision>${buildNumber}</Build-Revision>
                         <Build-Date>${timestamp}</Build-Date>
                         <_include>-bnd.bnd</_include>
 			            <Service-Component>*</Service-Component>
+                        <Export-Package>com.imolczek.school.banking.loan.calculator.service,com.imolczek.school.banking.loan.calculator.service.exceptions</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>    	

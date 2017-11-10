@@ -3,7 +3,8 @@ package com.imolczek.school.banking.loan.calculator.service;
 import java.math.BigDecimal;
 
 import com.imolczek.school.banking.loan.calculator.exceptions.LoanCalculationException;
-import com.imolczek.school.banking.loan.calculator.model.LoanCalculationResult;
+import com.imolczek.school.banking.loan.calculator.service.exceptions.LoanCalculationServiceException;
+import com.imolczek.school.banking.loan.model.LoanCalculationResult;
 
 /**
  * @author Fabian Bouché
@@ -19,6 +20,6 @@ public interface LoanCalculationService {
 	 * @return a loan calculation result
 	 * @throws LoanCalculationException
 	 */
-	public LoanCalculationResult calculate(BigDecimal amount, BigDecimal installment, BigDecimal rate) throws LoanCalculationException;
+	public LoanCalculationResult calculate(BigDecimal amount, BigDecimal installment, BigDecimal rate) throws LoanCalculationServiceException;
 	
 }

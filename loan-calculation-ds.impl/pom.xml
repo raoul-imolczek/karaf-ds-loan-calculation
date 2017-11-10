@@ -12,7 +12,7 @@
 	<artifactId>loan-calculation-ds.impl</artifactId>
     <packaging>bundle</packaging>
 
-    <name>loan-calculation-ds</name>
+    <name>loan-calculation-ds-impl</name>
     <description>A declarative service wrapper for the loan calculation service implementation</description>
 
 	<dependencies>
@@ -43,7 +43,7 @@
                 <configuration>
                     <obrRepository>NONE</obrRepository>
                     <instructions>
-                        <Bundle-SymbolicName>${project.artifactId}-impl</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Build-Revision>${buildNumber}</Build-Revision>
                         <Build-Date>${timestamp}</Build-Date>
                         <_include>-bnd.bnd</_include>
